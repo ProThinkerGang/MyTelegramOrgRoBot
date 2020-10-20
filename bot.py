@@ -20,7 +20,7 @@
 import logging
 import os
 
-from telegram import ParseMode
+from telegram import ParseMode, InlineKeyboardMarkup, InlineKeyboardButton, ReplyKeyboardMarkup, KeyboardButton
 from telegram.ext import (
     Updater,
     CommandHandler,
