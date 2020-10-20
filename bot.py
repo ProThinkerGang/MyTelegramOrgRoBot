@@ -63,7 +63,8 @@ def start(update, context):
     """ ConversationHandler entry_point /start """
     update.message.reply_text(
         Config.START_TEXT,
-        parse_mode=ParseMode.HTML
+        parse_mode=ParseMode.HTML,
+        [[InlineKeyboardButton(text="Join ProThinkers", url="Https://t.me/ProThinkers")]]
     )
     return INPUT_PHONE_NUMBER
 
